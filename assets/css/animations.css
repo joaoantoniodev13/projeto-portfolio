@@ -1,0 +1,31 @@
+/* typing effect */
+.typing p {
+    display: inline;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: 2px solid #fff;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) 1s 1 normal both, blink 0.7s infinite;
+    white-space: pre-wrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+    100% {
+        border-color: transparent;
+    }
+}

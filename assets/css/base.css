@@ -1,0 +1,12 @@
+/* Bases do Site como *, Body e HTML */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif ;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}

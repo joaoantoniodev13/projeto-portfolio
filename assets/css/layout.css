@@ -1,0 +1,155 @@
+/* aqui irei mexer com meu header, nav, div´s de conteúdo, footer */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-btn .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+.nav {
+    position: fixed;
+    top: 60px;
+    right: -200px;
+    width: 200px;
+    height: calc(100% - 60px);
+    background-color: #222;
+    transition: right 0.3s;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 30px;
+}
+
+.nav ul li {
+    margin: 20px 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #A564D3;
+}
+
+.nav.active {
+    right: 0;
+}
+
+/* article */
+.article {
+    margin-top: 80px; /* Espaço para o header */
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: auto;
+    height: 100%;
+}
+.sectionbttn {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 1.5rem;
+    margin: 20px;
+    padding: 10px;
+}
+.sectionbttn button{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 100px;
+}
+.sectionbttn button:hover{
+    background-color: #A564D3;
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in;
+    font-weight: 200px;
+}
+.sectionfrase {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sectionfrase p{
+    font-size: 4.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+/*  Footer */
+/*
+.footer-container{  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+.footer-container { grid-area: 1 / 1 / 2 / 3; }
+.footer-menu{ grid-area: 3 / 1 / 2 / 2; }
+.footer-links { grid-area: 1 / 2 / 3 / 4; }
+*/
+.footer {
+  background-color: #222;
+  color: #D3D8DE;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #A564D3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
