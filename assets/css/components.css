@@ -16,3 +16,19 @@
     align-items: center;
     gap: 20px;
 }
+.article-abount{
+    width: auto;
+    height: 90vh;
+    display: flex;
+}
+.container-abount{
+    background-color:#5000ca ;
+    width: 900px;
+    height: 300px;
+    margin: 200px auto;
+    
+}
+.avatar img{
+    width: 180px;
+    height: 180px;
+}
