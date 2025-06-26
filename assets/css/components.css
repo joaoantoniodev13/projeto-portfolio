@@ -24,9 +24,31 @@
 }
 .container-abount{
     background-color:#5000ca ;
-    width: 900px;
+    width: 1300px;
     height: 300px;
     margin: 200px auto;
+    border-radius: 100px 40px;
+    display: grid; 
+    grid-template-columns: 0.3fr 1.7fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.container-abount p{
+    font-size: 18px;
+    text-align: justify;
+    width: 1020px;
+}
+.container-abount p, h2{
+    margin: 10px;
+}
+.container-abount:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-in;
+}
+.avatar{
+    padding: 50px 10px;
+    display: inline;
 }
 .avatar img{
     width: 180px;
